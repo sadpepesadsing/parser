@@ -1,0 +1,3 @@
+API_TOKEN = "8400581751:AAGq4hFJcqA57sXPU_pCo76EI4XM967UXz4"
+
+DB_NAME = "database/bot.db"

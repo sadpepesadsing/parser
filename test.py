@@ -1,16 +1,16 @@
 from telethon import TelegramClient, events
 
-api_id = 1234567  # реальное число с my.telegram.org
-api_hash = "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6"  # строка 32 символа
+api_id = 24296340
+api_hash = "27f2c8f4ea5a997a0314ac812ed04317"
 phone = "+16318956428"  # номер телефона в международном формате
 
-client = TelegramClient("my_session", api_id, api_hash)
+client = TelegramClient("user_session", api_id, api_hash)
 
 @client.on(events.NewMessage(chats=["@pqpqpqllllll"]))
 async def handler(event):
     print(f"Новый пост: {event.message.text}")
 
-client.start()
+client.start(phone)
 client.run_until_disconnected()
 
 
